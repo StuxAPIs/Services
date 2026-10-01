@@ -31,7 +31,7 @@ and, usually, its own site. It's built the same way as
 | Kittens | Random kitten images API | [kittens.stuxapis.net](https://kittens.stuxapis.net) | [StuxAPIs/Kittens](https://github.com/StuxAPIs/Kittens) |
 | SecretGen | Secret generator API | [secretgen.stuxapis.net](https://secretgen.stuxapis.net) | [StuxAPIs/SecretGen](https://github.com/StuxAPIs/SecretGen) |
 | Lunar Calendar | Lunar calendar API (fork of hnthap's project), site not live yet | — | [StuxAPIs/LunarCalendar](https://github.com/StuxAPIs/LunarCalendar) |
-| GithubStats | GitHub statistics API, site not live yet | — | [StuxAPIs/GithubStats](https://github.com/StuxAPIs/GithubStats) |
+| GithubStats | GitHub statistics API | [githubstats.stuxapis.net](https://githubstats.stuxapis.net) | [StuxAPIs/GithubStats](https://github.com/StuxAPIs/GithubStats) |
 | GithubStatsAction | GitHub Action for GitHub Readme Stats cards | — | [StuxAPIs/GithubStatsAction](https://github.com/StuxAPIs/GithubStatsAction) |
 | Soonpage | "Coming soon" page template | [soonpage.stuxapis.net](https://soonpage.stuxapis.net) | [StuxAPIs/soonpage](https://github.com/StuxAPIs/soonpage) |
 | Maintenancepage | Maintenance page template | [maintenancepage.stuxapis.net](https://maintenancepage.stuxapis.net) | [StuxAPIs/maintenancepage](https://github.com/StuxAPIs/maintenancepage) |

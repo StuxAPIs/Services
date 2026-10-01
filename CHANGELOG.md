@@ -3,6 +3,12 @@
 All notable changes to StuxAPIs Services (services.stuxapis.net) are documented here. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.0.4
+
+### Changed
+
+- GithubStats is live: its card shows a live badge from StuxAPIs Status (`stuxapis:githubstats`) instead of Coming soon, with a Website link
+
 ## v1.0.3
 
 ### Fixed
