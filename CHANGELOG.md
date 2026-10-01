@@ -3,6 +3,13 @@
 All notable changes to StuxAPIs Services (services.stuxapis.net) are documented here. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.0.5
+
+### Fixed
+
+- The primary buttons' glow and the hero's second glow were still Stux.Group red; they now use the StuxAPIs purple (`#BF7FF9`)
+- The Offline badge and the status band's down dot were purple instead of red
+
 ## v1.0.4
 
 ### Changed
