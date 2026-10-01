@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://services.stuxapis.net/sitemap.xml
