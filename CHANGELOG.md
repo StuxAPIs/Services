@@ -3,6 +3,12 @@
 All notable changes to StuxAPIs Services (services.stuxapis.net) are documented here. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.0.2
+
+### Fixed
+
+- Lunar Calendar's icon no longer sits in the bordered tile
+
 ## v1.0.1
 
 ### Fixed
