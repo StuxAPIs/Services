@@ -3,6 +3,12 @@
 All notable changes to StuxAPIs Services (services.stuxapis.net) are documented here. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.0.6
+
+### Changed
+
+- The status card is titled just "Status" (and its icon's alt text "Status icon") instead of repeating "StuxAPIs Status"
+
 ## v1.0.5
 
 ### Fixed
