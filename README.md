@@ -26,6 +26,7 @@ and, usually, its own site. It's built the same way as
 
 | Service | What it is | Site | Repo |
 |---|---|---|---|
+| StuxAPIs | The brand itself: APIs and libraries for the Stux.Group ecosystem | [stuxapis.net](https://stuxapis.net) | private |
 | StuxAPIs Status | Live status and uptime history of every StuxAPIs service | [status.stuxapis.net](https://status.stuxapis.net) | [StuxAPIs/Status](https://github.com/StuxAPIs/Status) |
 | SeasonalOverlaysLibrary | Dependency-free seasonal particle overlays | [seasonaloverlayslibrary.stuxapis.net](https://seasonaloverlayslibrary.stuxapis.net) | [StuxAPIs/SeasonalOverlaysLibrary](https://github.com/StuxAPIs/SeasonalOverlaysLibrary) |
 | Kittens | Random kitten images API | [kittens.stuxapis.net](https://kittens.stuxapis.net) | [StuxAPIs/Kittens](https://github.com/StuxAPIs/Kittens) |

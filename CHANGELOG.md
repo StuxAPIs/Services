@@ -3,6 +3,18 @@
 All notable changes to StuxAPIs Services (services.stuxapis.net) are documented here. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.1.0
+
+### Added
+
+- StuxAPIs itself is listed first under Featured, ahead of Status, linking to stuxapis.net and a way to get in touch
+- A light theme, following the system preference: light purple-tinted neutrals with the StuxAPIs purple deepened to `#6a16c2` (links and accents) and `#8c3fde` so text, links and button labels meet WCAG AA; the header, buttons, status badges, status band dot and footer logo all switch with it, and the changelog badges use their deeper light colours
+
+### Changed
+
+- The dev-mode site banner follows the system theme instead of always using its dark style
+- The header, ghost buttons, status badges, accent tints and link hovers use colour variables instead of hard-coded dark-only colours (the dark theme looks the same)
+
 ## v1.0.6
 
 ### Changed
