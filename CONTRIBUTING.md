@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://global.media.stuxapis.net/logo.png" height="80" alt="StuxAPIs Logo">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://global.media.stuxapis.net/logo-light.png"><source media="(prefers-color-scheme: light)" srcset="https://global.media.stuxapis.net/logo-dark.png"><img src="https://global.media.stuxapis.net/logo-dark.png" height="80" alt="StuxAPIs Logo"></picture>
 </p>
 
 # Contributing to StuxAPIs Services
