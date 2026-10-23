@@ -1,7 +1,23 @@
 # Changelog
 
 All notable changes to StuxAPIs Services (services.stuxapis.net) are documented here. This
-project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## v26.10.23
+
+### Added
+
+- A Discord link preview built from the site's own details (`<script id="discord:component-embed">` in each page's head, except 404 and the old `/changelog/` redirect): the home page shows what the site is, how many live services it lists and their names, with buttons to the services list, Status and StuxAPIs; other pages show their title and description. The embed is left out (an HTML comment instead) if it ever goes over Discord's 3,000-byte limit
+- A full favicon set: `favicon.ico`, `apple-touch-icon.png`, `site.webmanifest` and 192, 512 and maskable 512 icons, linked from every page's head alongside the existing light/dark icons
+- `scripts/build-head.py` writes the favicon and Discord blocks into every page (`--check` verifies they are current), with `tests/head.py` and `tests/changelog-render.js` covering them and the changelog page's `vYY.MM.DD` headings
+- `tests/version.sh`, which checks that `VERSION.md` is a valid Date Version, a real calendar date not in the future, and the same as the newest entry in this changelog
+
+### Changed
+
+- Switched from Semantic Versioning to [Date Versioning](https://datevers.ing): releases are numbered by their UTC release date as `YY.MM.DD`, with `-1`, `-2`… for later releases the same day. This release follows v1.2.0
+- `commit.sh` and `commit.bat` refuse a `VERSION.md` that isn't a valid Date Version or is dated in the future (UTC), and warn when it's dated before today
+- The changelog workflow check and the dev server know the Date Version form and the `.webmanifest` type
+- `README.md` and `CONTRIBUTING.md` describe Date Versioning and the release steps
 
 ## v1.2.0
 

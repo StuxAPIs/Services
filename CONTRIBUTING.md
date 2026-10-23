@@ -29,6 +29,7 @@ a single dependency-free Node script; the only requirement is having Node itself
   [StuxieDev Projects](https://github.com/StuxieDev/Projects), recoloured in StuxAPIs purple
   (`#7a1fd6`, with a `#BF7FF9` highlight).
 - The sitemap (`sitemap.xml`, `sitemap/index.html`, `robots.txt`) is generated: after adding or removing a page, edit the `PAGES` list in `scripts/build-sitemap.py` and run `python scripts/build-sitemap.py`, then commit the result. Add new root files to the copy step in `.github/workflows/pages.yml`.
+- Every page's favicon tags and Discord link-preview embed are generated: after adding or editing a page (or the home page's service cards), run `python scripts/build-head.py` and commit the result; `python tests/head.py` checks them. Run `build-head.py` after `build-sitemap.py` too.
 - Clean URLs use a folder-per-page layout (`legal/privacy/index.html` → `/legal/privacy/`).
 - Shared styles live in `assets/css/style.css`; shared behaviour in `assets/js/main.js`. Copy the
   existing header/footer block when adding a page rather than introducing a templating system.
@@ -76,13 +77,14 @@ All six live under `legal/` (`privacy`, `terms`, `cookies`, `imprint`, `disclaim
 each its own folder with an `index.html`, linked from the **Boring Legal Stuff** hub at
 `legal/index.html`. Keep them in sync with what the site actually does.
 
-## Versioning and changelog
+## Versioning
 
-- The version lives in `VERSION.md` (a bare version string); bump it on every release
-- Every release gets a `CHANGELOG.md` entry using `###` subsections in this order: Added,
-  Changed, Fixed, Removed, Security, Deprecated. Never a bare bullet list under a version
-- `commit.sh` (bash) and `commit.bat` (Windows) read `VERSION.md` and handle the commit and
-  `git tag`; the release workflow publishes a GitHub Release when the tag is pushed
+This project uses [Date Versioning](https://datevers.ing). To release:
+
+1. Add a `## vYY.MM.DD` entry at the top of `CHANGELOG.md`, with its sections in this order: Added, Changed, Fixed, Removed, Security, Deprecated.
+2. Set `VERSION.md` to the same bare version (no `v`): today's **UTC** date as `YY.MM.DD`, or `YY.MM.DD-1`, `-2`… for later releases the same UTC day. Never a future date. Use UTC, not local time: just after midnight in the UK it is still the previous day in UTC.
+3. Run `bash tests/version.sh`.
+4. Run `./commit.sh` (or `commit.bat` on Windows). It checks the version, commits and tags `vYY.MM.DD`, and never pushes.
 
 ## Before committing
 
