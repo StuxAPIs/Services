@@ -83,6 +83,12 @@ All six live under `legal/` (`privacy`, `terms`, `cookies`, `imprint`, `disclaim
 each its own folder with an `index.html`, linked from the **Boring Legal Stuff** hub at
 `legal/index.html`. Keep them in sync with what the site actually does.
 
+## Branches
+
+- Work on `test`, or on a branch off it. Never push to `main`
+- Changes reach `main` only through a pull request from `test` into `main`, which needs CI to pass and is reviewed and merged by Leo
+- Release commits and tags are made on `test` (`git push origin test --tags`) and take effect when the pull request is merged. Merging deploys the site to GitHub Pages.
+
 ## Versioning
 
 This project uses [Date Versioning](https://datevers.ing). To release:
