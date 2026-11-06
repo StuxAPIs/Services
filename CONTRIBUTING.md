@@ -35,8 +35,14 @@ a single dependency-free Node script; the only requirement is having Node itself
   existing header/footer block when adding a page rather than introducing a templating system.
 - `assets/js/dev-mode.js` is the production default (`DEV_MODE = false`), committed as-is.
   `dev-server.js` intercepts that one path locally and serves a generated version instead.
-- **Icons are self-hosted** in `assets/img/services/`, resized to 128 × 128. Take them from the
-  service's own `global.media.<domain>/icon.png` or its repo.
+- **Icons are self-hosted** in `assets/img/services/`. A service with a logo of its own uses it, resized to
+  128 × 128, from its `global.media.<domain>/icon.png` or its repo. Every other service gets its own badge-style
+  icon (the StuxAPIs mark on a round avatar, with a badge in the corner saying what the service is), never the
+  shared StuxAPIs icon: `python -I scripts/badge-icons.py stuxapis <StuxAPIs icon-light.png> assets/img/services`,
+  with `icon-light.png` downloaded from `https://global.media.stuxapis.net/icon-light.png`. Add a glyph and file
+  name there for a new one.
+- **Give every card its full name**, in its heading and its icon's alt text ("StuxAPIs Status", not "Status";
+  `alt="StuxAPIs Status icon"`). A name that is already distinctive (Kittens, GithubStats) stays as it is.
 - **Only two things load from elsewhere**, both StuxAPIs' own: live status from
   `raw.githubusercontent.com/StuxAPIs/Status` and SeasonalOverlaysLibrary from
   `seasonaloverlayslibrary.stuxapis.net`. If you add another, update the Privacy Policy.
