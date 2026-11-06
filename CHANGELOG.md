@@ -3,6 +3,26 @@
 All notable changes to StuxAPIs Services (services.stuxapis.net) are documented here. This
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.06
+
+### Added
+
+- `scripts/badge-icons.py` (copied from StuxGroup/Services, set to StuxAPIs' purple) builds badge-style icons for
+  services without a logo of their own: the StuxAPIs mark on a round avatar, with a badge in the corner saying what
+  the service is
+
+### Changed
+
+- **Every card uses its full name, with its own icon.** "Status" is now StuxAPIs Status, with a heartbeat badge;
+  the templates are StuxAPIs Soonpage, Maintenancepage and Servicepage, each with its own badge (an hourglass, a
+  spanner, a browser window). GithubStats (a bar chart), GithubStatsAction (a play button), Lunar Calendar (a
+  crescent moon) and GitHubStatsLegacy (an archive box) get their own badges instead of the shared StuxAPIs icon.
+  The icons' alt text uses the same full names
+
+### Removed
+
+- `assets/img/services/status.svg` and the shared `assets/img/services/stuxapis.png`, replaced by the badge icons
+
 ## v26.10.23
 
 ### Added
