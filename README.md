@@ -31,6 +31,7 @@ and, usually, its own site. It's built the same way as
 | SeasonalOverlaysLibrary | Dependency-free seasonal particle overlays | [seasonaloverlayslibrary.stuxapis.net](https://seasonaloverlayslibrary.stuxapis.net) | [StuxAPIs/SeasonalOverlaysLibrary](https://github.com/StuxAPIs/SeasonalOverlaysLibrary) |
 | Kittens | Random kitten images API | [kittens.stuxapis.net](https://kittens.stuxapis.net) | [StuxAPIs/Kittens](https://github.com/StuxAPIs/Kittens) |
 | SecretGen | Secret generator API | [secretgen.stuxapis.net](https://secretgen.stuxapis.net) | [StuxAPIs/SecretGen](https://github.com/StuxAPIs/SecretGen) |
+| FlashView | Plays SWF (Flash) files in the browser with a self-hosted Ruffle | [flashview.stuxapis.net](https://flashview.stuxapis.net) | [StuxAPIs/FlashView](https://github.com/StuxAPIs/FlashView) |
 | Lunar Calendar | Lunar calendar API (fork of hnthap's project), site not live yet | — | [StuxAPIs/LunarCalendar](https://github.com/StuxAPIs/LunarCalendar) |
 | GithubStats | GitHub statistics API | [githubstats.stuxapis.net](https://githubstats.stuxapis.net) | [StuxAPIs/GithubStats](https://github.com/StuxAPIs/GithubStats) |
 | GithubStatsAction | GitHub Action for GitHub Readme Stats cards | — | [StuxAPIs/GithubStatsAction](https://github.com/StuxAPIs/GithubStatsAction) |
