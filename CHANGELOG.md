@@ -3,6 +3,17 @@
 All notable changes to StuxAPIs Services (services.stuxapis.net) are documented here. This
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.07
+
+### Changed
+
+- **The hero's eyebrow is a live status badge.** It keeps the eyebrow's size and pill shape, but takes a status
+  badge's colours (green when up, amber when degraded or partial, red when down) and a 7px dot that pulses when up
+  (not with reduced motion). Once StuxAPIs Status loads, it reads only the state ("All operational", "Degraded",
+  "Partial outage" or "Major outage"), with no brand name, and it links to status.stuxapis.net. It reuses the
+  cards' `summary.json` request, and stays the plain "StuxAPIs" eyebrow if that can't load. CONTRIBUTING
+  documents it
+
 ## v26.11.06-1
 
 ### Changed
