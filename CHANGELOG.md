@@ -3,6 +3,16 @@
 All notable changes to StuxAPIs Services (services.stuxapis.net) are documented here. This
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.07-1
+
+### Added
+
+- A FlashView card in APIs & libraries (flashview.stuxapis.net: plays SWF files in the browser with a self-hosted Ruffle), with its own icon and live status, and a row in the README's services table
+
+### Changed
+
+- The hero counts 7 APIs & libraries, and the Discord preview 8 live services, with FlashView in its list
+
 ## v26.11.07
 
 ### Changed
