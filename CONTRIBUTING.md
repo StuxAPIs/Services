@@ -70,6 +70,16 @@ The services list has four sections, in this order: **Featured**, **APIs & libra
    class and `data-state="discontinued"`, drop any dead Website link, and add a one-line `<p class="discontinued-note">` saying why
 6. Update the hero's service count if it changed
 
+### The hero eyebrow is a live status badge
+
+The pill above the hero headline is `<a class="eyebrow" href="https://status.stuxapis.net" data-status-eyebrow="stuxapis:*">`, holding `<span class="eyebrow-label">StuxAPIs</span><span class="eyebrow-state" hidden></span>`. `data-status-eyebrow` takes `<source>:*` for the whole status page, or `<source>:<slug>` for one monitor. `main.js` fills it from the same `summary.json` request the cards use (no second fetch):
+
+- It keeps the eyebrow's size, padding, font and pill shape, but takes a status badge's colours: green when up, amber when degraded or partial, red when down. It also gets a 7px dot, which pulses only when up, and never with `prefers-reduced-motion`.
+- It shows only the state, with no brand name: All operational, Degraded, Partial outage or Major outage (for one monitor: Online, Degraded or Offline). The label is hidden once the state shows.
+- If the status can't load, nothing changes: it stays the plain "StuxAPIs" eyebrow, still linking to the status page.
+
+Keep both spans when editing the hero, and check dark mode, light mode and an outage state after changing its CSS.
+
 ## Seasonal overlays
 
 `main.js` asks SeasonalOverlaysLibrary for today's preset from its calendar. It plays once per
@@ -82,6 +92,12 @@ library can't load, the button stays hidden and nothing else changes.
 All six live under `legal/` (`privacy`, `terms`, `cookies`, `imprint`, `disclaimer`, `opt-out`),
 each its own folder with an `index.html`, linked from the **Boring Legal Stuff** hub at
 `legal/index.html`. Keep them in sync with what the site actually does.
+
+## Branches
+
+- Work on `test`, or on a branch off it. Never push to `main`
+- Changes reach `main` only through a pull request from `test` into `main`, which needs CI to pass and is reviewed and merged by Leo
+- Release commits and tags are made on `test` (`git push origin test --tags`) and take effect when the pull request is merged. Merging deploys the site to GitHub Pages.
 
 ## Versioning
 
