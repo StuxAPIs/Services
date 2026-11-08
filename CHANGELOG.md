@@ -3,6 +3,13 @@
 All notable changes to StuxAPIs Services (services.stuxapis.net) are documented here. This
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.08
+
+### Changed
+
+- Says services are "checked regularly", not "every 5 minutes", in the Status section, the StuxAPIs Status card and the live status band (GitHub runs the 5-minute schedule best-effort, often less often; the status page shows the real rhythm)
+- The hero's third figure is "90 days of status history" instead of "5 min between status checks"
+
 ## v26.11.07-1
 
 ### Added
