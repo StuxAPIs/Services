@@ -38,7 +38,7 @@ and, usually, its own site. It's built the same way as
 | StuxAPIs Soonpage | "Coming soon" page template | [soonpage.stuxapis.net](https://soonpage.stuxapis.net) | [StuxAPIs/soonpage](https://github.com/StuxAPIs/soonpage) |
 | StuxAPIs Maintenancepage | Maintenance page template | [maintenancepage.stuxapis.net](https://maintenancepage.stuxapis.net) | [StuxAPIs/maintenancepage](https://github.com/StuxAPIs/maintenancepage) |
 | StuxAPIs Servicepage | Placeholder for services not yet set up | [servicepage.stuxapis.net](https://servicepage.stuxapis.net) | [StuxAPIs/servicepage](https://github.com/StuxAPIs/servicepage) |
-| GitHubStatsLegacy | The original GitHub Stats API, replaced by GithubStats (discontinued) | — | [StuxAPIs/GitHubStatsLegacy](https://github.com/StuxAPIs/GitHubStatsLegacy) |
+| GitHubStatsLegacy | The original GitHub Stats API, replaced by GithubStats (discontinued; the repository is archived) | — | [StuxAPIs/GitHubStatsLegacy](https://github.com/StuxAPIs/GitHubStatsLegacy) |
 
 This table (and the matching cards on the site) is the source of truth for what's listed. Update
 both together when a service is added, retired or renamed. Each card shows one badge above its description: Discontinued, Template, Maintenance or Coming
