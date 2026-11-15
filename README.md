@@ -50,6 +50,7 @@ badge when it has a ``data-monitor` (`stuxapis:<slug>`) matching a monitor slug 
 ```
 ./dev-server.sh          # http://127.0.0.1:8080, DEV_MODE forced on
 ./dev-server.sh 3000 --no-dev-mode
+./dev-server.sh --lan    # also reachable from a phone on your network
 ```
 
 On Windows, use `dev-server.bat` instead. No `npm install` needed: the dev server is a single
@@ -60,7 +61,7 @@ dependency-free Node script (`dev-server.js`); Node just needs to be installed. 
 
 This project uses [Date Versioning](https://datevers.ing): each release is numbered by its UTC release date as `YY.MM.DD` (for example `26.10.23`), with `-1`, `-2`… for later releases the same day. See [CHANGELOG.md](CHANGELOG.md) for what changed in each release.
 
-Releases are committed and tagged on the `test` branch and reach `main` through a pull request from `test`, which needs CI to pass and is reviewed and merged by Leo; see [Branches](CONTRIBUTING.md#branches).
+Releases are committed and tagged on the `test` branch, then go live through two pull requests: `test` into `staging`, then `staging` into `main`. Each needs CI to pass and is reviewed and merged by Leo; see [Branches and going live](CONTRIBUTING.md#branches-and-going-live).
 
 ## License
 
