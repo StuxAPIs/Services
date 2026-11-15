@@ -3,6 +3,12 @@
 All notable changes to StuxAPIs Services (services.stuxapis.net) are documented here. This
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.15-1
+
+### Changed
+
+- GitHubStatsLegacy is marked as archived: its card says the repository is archived (read-only) and its link reads "Repository (archived)", and the README table says so too. The repository itself is now archived on GitHub
+
 ## v26.11.15
 
 ### Added
